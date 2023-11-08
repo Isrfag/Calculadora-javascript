@@ -22,8 +22,7 @@ const calcular = () => {
 const deshacer = () => {
 
     const valorPantalla = document.getElementById('pantalla').value;
-    //Hay que igualar el elemento html al string pq no lo es y si no no se puede usar el metodo slice
-    document.getElementById('pantalla').value = valorPantalla.slice(0,-1);
+    const resultado = valorPantalla.substring(0, valorPantalla.length -1)
+    document.getElementById('pantalla').value = resultado
 
-    
 }
