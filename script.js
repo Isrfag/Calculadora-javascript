@@ -18,3 +18,12 @@ const calcular = () => {
     const resultado = eval(valorPantalla) //eval cambia un string a un codigo numerico y lo ejecuta
     document.getElementById('pantalla').value = resultado //Pintamos el resultado
 }
+
+const deshacer = () => {
+
+    const valorPantalla = document.getElementById('pantalla').value;
+    //Hay que igualar el elemento html al string pq no lo es y si no no se puede usar el metodo slice
+    document.getElementById('pantalla').value = valorPantalla.slice(0,-1);
+
+    
+}
